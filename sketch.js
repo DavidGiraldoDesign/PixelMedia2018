@@ -1,19 +1,22 @@
 let canvas;
 let h;
-let sum,amp,i,d;
+let sum,amp,d;
+let sumS,ampS,dS;
 
 function setup() {
 
     frameRate(60);
-    canvas = createCanvas(displayWidth, displayHeight);
+    canvas = createCanvas(windowWidth, windowHeight);
     canvas.style('z-index', '4');
     canvas.style('position', 'fixed');
     canvas.style('top', '0');
     cube.style.width = `${windowWidth * 0.9}`;
     cube.style.height = `${windowWidth * 0.9}`;
     sum=0.1;
-    i=0.01;
     amp=5;
+    dS = 0;
+    sumS=0.1;
+    ampS=25;
     d = 0;
 }
 
@@ -37,9 +40,9 @@ function draw() {
     translate(windowWidth / 2, windowHeight / 2);
     var a = atan2(mouseY - height / 2, mouseX - width / 2);
     pop();
-
+    dS= (sin(sumS+=0.05)*ampS);
     h=map(degrees(a),-180,180,0,359);
-    cube.style.background = `hsl(${h},${100}%,${50}%)`;
+    cube.style.background = `hsl(${h+dS},${100}%,${50}%)`;
     newCursor();
 }
 
