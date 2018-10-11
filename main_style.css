@@ -18,9 +18,22 @@
 
 
 }
-
+#cubeContainer{
+    top:0px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cube{
+    border-radius: 400px;
+    display: inline;
+}
 body {
-    background: black;
+    background:black;
 
 }
 
@@ -37,6 +50,12 @@ h1 {
 }
 
 @media only screen and (orientation: landscape) {
+    #cubeContainer{
+        display: none;
+    }
+    #turn-smartphone {
+        width: 20%;
+    }
 
 
     img {
@@ -97,6 +116,9 @@ a:visited:active {
     color: rgb(50, 50, 50);
     text-align: right;
     position: fixed;
+    background: none;
+    z-index: 5;
+    
 }
 
 .container {
@@ -107,11 +129,11 @@ a:visited:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
-#app-advised{
-    
+#app-advised {
+
     width: 100%;
     height: 100%;
     display: flex;
