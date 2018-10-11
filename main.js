@@ -13,13 +13,14 @@ function app() {
                         <img id="phone" src="images/smartphone.png">     
                         <br>
                         <h2 >1) Abre la web en tu celular.
-                        <br> 2) Agrégala a tu pantalla de inicio como una app.</h2>                  
+                        <br>
+                        <br> 2) Agrégala a tu pantalla de <br>inicio como una App.</h2>                  
                     </div>
 
                     <div id="turn-phone">
                         <img id="phone" src="images/smartphone.png">     
                         <br>
-                        <h2> Gira tu celular</h2>                  
+                        <h2> Alto ahí loca, gira tu celular :v</h2>                  
                     </div> 
     
                 </div> 

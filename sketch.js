@@ -14,7 +14,7 @@ function setup() {
     r = 0;
     g = 0;
     b = 0;
-    amp = 255;
+    amp = 155;
     inc = 0.01;
     deviceOrientation = 'portrait';
 }
@@ -25,17 +25,17 @@ function draw() {
     background(0);
 
 
-    valR = (sin(r += inc)) * amp;
-    valB = (sin(b += inc)) * amp;
-    valG = (sin(g += 0.08)) * amp;
+    valR = 100+(sin(r += inc)) * amp;
+    valB = 100+(sin(b += inc)) * amp;
+    valG = 100+(sin(g += 0.08)) * amp;
 
-    fill(255, valG, valB);
+    fill(255, 0, valB);
 
     noStroke();
     if (windowWidth > windowHeight) {
 
         if(onMobile == true){
-            body.querySelector('#turn-phone').style.display = "inline";
+            body.querySelector('#turn-phone').style.display = "flex";
         }
 
     } else {
