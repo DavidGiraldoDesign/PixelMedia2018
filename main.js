@@ -33,6 +33,7 @@ function app() {
                 </div>
                 <div id="cubeContainer">
                 <div id="cube"></div>   
+                
                 </div>    
                         `;
                         console.log(onMobile);
