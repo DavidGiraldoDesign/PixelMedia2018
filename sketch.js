@@ -14,10 +14,14 @@ function setup() {
     cube.style.height = `${windowWidth * 0.9}`;
     sum=0.1;
     amp=5;
-    dS = 0;
+    d = 0;
+
     sumS=0.1;
     ampS=25;
-    d = 0;
+    dS = 0;
+    
+    
+    
 }
 
 function draw() {
@@ -40,8 +44,11 @@ function draw() {
     translate(windowWidth / 2, windowHeight / 2);
     var a = atan2(mouseY - height / 2, mouseX - width / 2);
     pop();
-    dS= (sin(sumS+=0.05)*ampS);
+
+    dS= (sin(sumS+=0.08)*ampS);
+
     h=map(degrees(a),-180,180,0,359);
+    
     cube.style.background = `hsl(${h+dS},${100}%,${50}%)`;
     newCursor();
 }
