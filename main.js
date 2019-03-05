@@ -18,7 +18,7 @@ function app() {
                     <div id="turn-phone">
                         <img id="turn-smartphone" src="images/turn-smartphone.png">     
                         <br>
-                        <h2> Alto ahí loca, gira tu celular :v</h2>                  
+                        <h2> ¡Ups!, gira tu celular </h2>                  
                     </div> 
                 </div>                          
                      
